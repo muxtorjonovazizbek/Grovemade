@@ -1,0 +1,98 @@
+main {
+    .hero {
+        width: 100%;
+        position: relative;
+        .heroImg {
+            width: 100%;
+        }
+        .heroImgMobile {
+            display: none;
+        }
+        .heroInfos {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            width: 90%;
+            height: fit-content;
+            position: absolute;
+            top: 45%;
+            left: 5%;
+            transform: translate(-50% -50%);
+            h1 {
+                font-weight: 400;
+                font-size: 43px;
+                line-height: 46px;
+                color: $textColorW;
+            }
+            h4 {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 17px;
+                letter-spacing: 0.8px;
+                color: $textColorW;
+                padding-bottom: 10px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 15px;
+                letter-spacing: 1.4px   ;
+                color: $textColorW;
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    main {
+        .hero {
+            .heroInfos {
+                h1 {
+                    font-size: 35px;
+                    line-height: 38px;
+                }
+                h4 {
+                    font-size: 13px;
+                    line-height: 15px;
+                }
+                p {
+                    font-size: 10px;
+                    line-height: 13px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:620px) {
+    main {
+        .hero {
+            .heroImg {
+                display: none;
+            }
+            .heroImgMobile {
+                display: block;
+                object-fit: cover;
+                width: 100%;
+            }
+            .heroInfos {
+                display: flex;
+                gap: 5px;
+                h1 {
+                    font-size: 28px;
+                    line-height: 30px;
+                }
+                h4 {
+                    font-size: 12px;
+                    line-height: 12px;
+                    padding-bottom: 5px;
+                }
+                p {
+                    font-size: 10px;
+                    line-height: 12px;
+                }
+            }
+        }
+    }
+}

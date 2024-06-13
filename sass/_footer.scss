@@ -1,0 +1,222 @@
+footer {
+    width: 100%;
+    background-color: #F9F9F9;      
+    .footerWrapper {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        gap: 80px;
+        margin-top: 50px;
+        // width: 100%;
+        .footerTop {
+            display: flex;
+            gap: 20px;
+            margin-top: 50px;
+            .footerTop-list {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                width: 250px;
+                .footerTop-list__link {
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 24px;
+                    color: $textColor;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                }
+
+            }
+            .footerTop-list__inner {
+                display: flex;
+                width: 100%;
+            .footerTop-news {
+                display: flex;
+                flex-direction: column;
+                gap: 23px;
+                width: 500px;   
+                .footerTop-news__h {
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 24px;
+                    color: $textColor;
+                }
+                .footerTop-news__p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    width: 60%;
+                    // text-align: center;
+                }
+                .footerTop-news__line {
+                    width: 60%;
+                    background: black;
+                    height: 1px;
+                    margin-top: 50px;
+                }
+            }
+            .footerTop-home {
+                margin-left: auto;
+                height: fit-content;
+            }
+            }
+        }
+        .footerBottom {
+            display: flex;
+            gap: 35px;
+            margin-left: auto;
+            padding-bottom: 50px;
+            a {
+                color: #707A7F;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 15px;
+                letter-spacing: 0.8px;
+            }
+        }
+    }
+}
+
+@media (max-width:900px) {
+    footer {
+        .footerWrapper {
+            .footerTop {
+                display: flex;
+                flex-direction: column;
+                .footerTop-list {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 22px;
+                    margin-bottom: 20px;
+                    .footerTop-list__link {
+                        font-size: 20px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:878px) {
+    footer {
+        display: flex;
+        gap: 5px;
+        .footerWrapper {
+            .footerTop {
+                display: flex;
+                flex-direction: column;
+                .footerTop-list {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    margin-bottom: 20px;
+                    .footerTop-list__link {
+                        font-size: 18px;
+                        
+                    }
+                }
+            }
+            .footerTop-list__inner {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .footerTop-news {
+                        display: flex;
+                        align-items: center;
+                        .footerTop-news__p {
+                            text-align: center;
+                        }
+                        .footerTop-news__line {
+                            margin-top: -30px;
+                        }
+                }
+                .footerTop-home {
+                    margin: 0 auto;
+                    margin-top: 10px;
+                }
+            }
+            .footerBottom {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+// @media (max-width:735px) {
+//     footer {
+//         .footerWrapper {
+//             .footerTop {
+//                 display: flex;
+//                 flex-direction: column;
+//                 .footerTop-list {
+//                     width: 100%;
+//                     display: flex;
+//                     flex-direction: row;
+//                     align-items: center;
+//                     gap: 22px;
+//                     margin-bottom: 20px;
+//                     .footerTop-list__link {
+//                         font-size: 12px;
+                        
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media (max-width:600px) {
+//     footer {
+//         .footerWrapper {
+//             .footerTop {
+//                 display: flex;
+               
+//                 .footerTop-list {
+//                     width: 100%;
+//                     display: flex;
+//                     flex-direction: row;
+//                     align-items: center;
+//                     gap: 22px;
+//                     margin-bottom: 20px;
+//                     .footerTop-list__link {
+//                         font-size: 12px;
+                        
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@media (max-width:673px) {
+    footer {
+        .footerWrapper {
+            .footerBottom {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;    
+
+            }
+        }
+    }
+}
+@media (max-width:500px) {
+    footer {
+        .footerWrapper {
+            .footerTop {
+                .footerTop-list__inner {
+                   .footerTop-news {
+                    width: fit-content;
+                   } 
+                }
+
+            }
+        }
+    }
+}
